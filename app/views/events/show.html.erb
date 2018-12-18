@@ -1,0 +1,36 @@
+<%= link_to 'Edit', edit_event_path(@event) %>
+<%= link_to 'Back', events_path %>
+<h1>Event</h1>
+<p>
+  <strong>Event Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Event Description:</strong>
+  <%= @event.description %>
+</p>
+<p>
+  <strong>Event Start Month:</strong>
+  <%= @event.startMonth %>
+</p>
+
+<p>
+  <strong>Event End Month:</strong>
+  <%= @event.endMonth %>
+</p>
+<hr>
+<h2>Occurrences of Event</h2>
+<hr>
+
+  <% @occur.each do |t| %>
+    <% if t.eventID == @event.id %>
+    <p>Event Name: <%=t.nameO%></p>
+    <p>Event Description: <%=t.descriptionO%></p>
+    <p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+
+    <hr>
+    <% end %>
+
+
+  <% end %>

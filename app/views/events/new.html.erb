@@ -1,0 +1,50 @@
+<h1>To make a new event</h1>
+
+
+<%= form_with scope: :event, url: events_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.label :reoccur %><br>
+    <%=form.select :reoccur, options_for_select(["Yes", "No"])%><br>
+    <!-- <%= form.text_field :reoccur %> -->
+  </p>
+
+  <p>
+    <%= form.label :reoccurType %><br>
+    <%=form.select :reoccurType, options_for_select(["Daily", "Weekly", "Monthly", "Quarterly"])%><br>
+    <!-- <%= form.text_field :reoccurType %> -->
+  </p>
+  <p>
+    <%= form.label :startMonth %><br>
+    <%=form.select :startMonth, options_for_select(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])%><br>
+    <!-- <%= form.text_field :startTime %> -->
+  </p>
+  <p>
+    <%= form.label :startDate %><br>
+    <%=form.select :startDate, options_for_select([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30])%><br>
+    <!-- <%= form.text_field :startTime %> -->
+  </p>
+  <p>
+    <%= form.label :endMonth %><br>
+    <%=form.select :endMonth, options_for_select(["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"])%><br>
+    <!-- <%= form.text_field :startTime %> -->
+  </p>
+  <p>
+    <%= form.label :endDate %><br>
+    <%=form.select :endDate, options_for_select([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30])%><br>
+    <!-- <%= form.text_field :startTime %> -->
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,2028 @@
+<script>
+  function toggle_div(id) {
+    var divelement = document.getElementById(id);
+
+
+    if(divelement.style.display == 'none')
+    divelement.style.display = 'block';
+    else
+    divelement.style.display = 'none';
+  }
+</script>
+<center>
+<h1 id= "title-text">m76 Project-Review Calendar</h1>
+<%= link_to 'My Events', controller: 'events' %>
+
+<%= link_to 'New Event', new_event_path %>
+</center>
+<h3>Sample of Calendar front end</h3>
+<p>Click the date buttons on the calendar to see a more detailed listing of all of the events for that particular day at the bottom of that month's calendar. <mark>Note: </mark>Double click buttons on intitiation to toggle info. After initial double click, toggle function works as intended.</p>
+<center>
+<h1>Janurary</h1>
+<table class="indexTable">
+  <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+  <tr><td class="tableRow"><button onclick="toggle_div('jan1');">1</button>
+    <% @occur.each do |t| %>
+
+
+    <% case t.startMonthO %>
+    <% when "1" %>
+    <% if t.startdateO == 1%>
+    <p><%= t.nameO%></p>
+    <% end %>
+    <% end %>
+
+  <% end %></td><td class="tableRow"><button onclick="toggle_div('jan2');">2</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "1" %>
+  <% if t.startdateO == 2%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan3');">3</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 3%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan4');">4</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 4%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan5');">5</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 5%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan6');">6</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 6%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan7');">7</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 7%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('jan8');">8</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "1" %>
+  <% if t.startdateO == 8%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan9');">9</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 9%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan10');">10</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 10%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan11');">11</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 11%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan12');">12</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 12%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan13');">13</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 13%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan14');">14</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 14%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('jan15');">15</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "1" %>
+  <% if t.startdateO == 15%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan16');">16</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 16%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan17');">17</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 17%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan18');">18</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 18%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan19');">19</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 19%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan20');">20</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 20%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan21');">21</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 21%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('jan22');">22</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "1" %>
+  <% if t.startdateO == 22%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan23');">23</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 23%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan24');">24</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 24%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan25');">25</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 25%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan26');">26</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 26%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan27');">27</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 27%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan28');">28</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 28%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+<tr><td class="tableRow"><button onclick="toggle_div('jan29');">29</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 29%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan30');">30</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 30%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('jan31');">31</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 31%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+</table>
+<div class = "hiddenText" id="jan1"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 1%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan2"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 2%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan3"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 3%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan4"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 4%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan5"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 5%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan6"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 6%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan7"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 7%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan8"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 8%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan9"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 9%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan10"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 10%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan11"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 11%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan12"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 12%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan13"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 13%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan14"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 14%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan15"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 15%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan16"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 16%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan17"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 17%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan18"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 18%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan19"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 19%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan20"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 20%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan21"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 21%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan22"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 22%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan23"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 23%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan24"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 24%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan25"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 25%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan26"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 26%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan27"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 27%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan28"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 28%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan29"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 29%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan30"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 30%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="jan31"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "1" %>
+<% if t.startdateO == 31%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<hr>
+
+<!-- ``````````````````````February ````````````````````````````````-->
+
+
+<h1>February</h1>
+<table class="indexTable">
+  <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+  <tr><td class="tableRow">
+    <% @occur.each do |t| %><%end%>
+
+
+    </td><td class="tableRow"><% @occur.each do |t| %> <%end%>
+
+
+  </td><td class="tableRow"><% @occur.each do |t| %> <%end%>
+
+
+</td><td class="tableRow"><button onclick="toggle_div('feb1');">1</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 1%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb2');">2</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 2%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb3');">3</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 3%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb4');">4</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 4%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('feb5');">5</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "2" %>
+  <% if t.startdateO == 5%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb6');">6</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 6%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb7');">7</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 7%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb8');">8</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 8%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb9');">9</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 9%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb10');">10</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 10%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb11');">11</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 11%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('feb12');">12</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "2" %>
+  <% if t.startdateO == 12%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb13');">13</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 13%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb14');">14</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 14%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb15');">15</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 15%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb16');">16</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 16%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb17');">17</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 17%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb18');">18</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 18%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('feb19');">19</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "2" %>
+  <% if t.startdateO == 19%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb20');">20</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 20%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb21');">21</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 21%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb22');">22</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 22%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb23');">23</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 23%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb24');">24</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 24%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb25');">25</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 25%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+<tr><td class="tableRow"><button onclick="toggle_div('feb26');">26</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 26%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb27');">27</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 27%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb28');">28</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 28%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td>
+<td class="tableRow"><button onclick="toggle_div('feb29');">29</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 29%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('feb30');">30</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 30%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td>
+</tr>
+</table>
+<div class = "hiddenText" id="feb1"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 1%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb2"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 2%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb3"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 3%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb4"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 4%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb5"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 5%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb6"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 6%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb7"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 7%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb8"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 8%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb9"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 9%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb10"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 10%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb11"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 11%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb12"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 12%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb13"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 13%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb14"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 14%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb15"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 15%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb16"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 16%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb17"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 17%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb18"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 18%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb19"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 19%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb20"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 20%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb21"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 21%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb22"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 22%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb23"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 23%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb24"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 24%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb25"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 25%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb26"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 26%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb27"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 27%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb28"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 28%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb29"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 29%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb30"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 30%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb31"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 31%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<hr>
+
+<!-- ````````````````````````````March```````````````````````````````````` -->
+
+<h1>March</h1>
+<table class="indexTable">
+  <th>Monday</th><th>Tuesday</th><th>Wednesday</th><th>Thursday</th><th>Friday</th><th>Saturday</th><th>Sunday</th>
+  <tr><td class="tableRow">
+    <% @occur.each do |t| %><%end%>
+
+
+    </td><td class="tableRow"><% @occur.each do |t| %> <%end%>
+
+
+  </td><td class="tableRow"><% @occur.each do |t| %> <%end%>
+
+
+</td><td class="tableRow">
+</td><td class="tableRow"></td><td class="tableRow"><button onclick="toggle_div('mar1');">1</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 1%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar2');">2</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 2%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('mar3');">3</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "3" %>
+  <% if t.startdateO == 3%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar4');">4</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 4%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar5');">5</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 5%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar6');">6</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 6%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar7');">7</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 7%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar8');">8</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 8%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar9');">9</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 9%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('mar10');">10</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "3" %>
+  <% if t.startdateO == 10%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar11');">11</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 11%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar12');">12</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 12%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar13');">13</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 13%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar14');">14</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 14%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar15');">15</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 15%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar16');">16</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 16%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+  <tr><td class="tableRow"><button onclick="toggle_div('mar17');">17</button><% @occur.each do |t| %>
+
+
+  <% case t.startMonthO %>
+  <% when "3" %>
+  <% if t.startdateO == 17%>
+  <p><%= t.nameO%></p>
+  <% end %>
+  <% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar18');">18</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 18%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar19');">19</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 19%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar20');">20</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 20%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar21');">21</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 21%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar22');">22</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 22%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar23');">23</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 23%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td></tr>
+<tr><td class="tableRow"><button onclick="toggle_div('mar24');">24</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 24%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar25');">25</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 25%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar26');">26</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 26%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td>
+<td class="tableRow"><button onclick="toggle_div('mar27');">27</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 27%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar28');">28</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 28%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar29');">29</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 29%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td><td class="tableRow"><button onclick="toggle_div('mar30');">30</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 30%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td>
+</tr><tr><td class="tableRow"><button onclick="toggle_div('mar31');">31</button><% @occur.each do |t| %>
+
+
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 31%>
+<p><%= t.nameO%></p>
+<% end %>
+<% end %>
+
+<% end %></td>
+</tr>
+</table>
+<div class = "hiddenText" id="mar1"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 1%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar2"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 2%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar3"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 3%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb4"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 4%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar5"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 5%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar6"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "6" %>
+<% if t.startdateO == 6%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar7"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 7%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar8"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 8%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar9"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 9%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar10"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 10%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar11"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 11%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb12"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 12%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar13"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 13%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar14"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 14%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar15"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 15%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar16"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 16%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar17"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 17%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar18"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 18%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar19"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 19%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar20"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 20%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar21"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 21%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar22"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 22%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar23"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 23%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar24"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 24%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="feb25"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "2" %>
+<% if t.startdateO == 25%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar26"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 26%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar27"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 27%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar28"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 28%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar29"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 29%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar30"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 30%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<div class = "hiddenText" id="mar31"><% @occur.each do |t| %>
+<% case t.startMonthO %>
+<% when "3" %>
+<% if t.startdateO == 31%>
+<p>Event Name: <%=t.nameO%></p>
+<p>Event Description: <%=t.descriptionO%></p>
+<p>Event Date: <%= t.startMonthO%> / <%=t.startdateO%> / 2018</p>
+<hr>
+<% end %>
+<% end %>
+<% end %></div>
+<hr>
+</center>
